@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://sap.com/xi/BASIS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="IntegrationProcessIn" targetNamespace="http://sap.com/xi/BASIS">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>6b0a04a1c34511dbb4660017a44cb001</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="sap"/>
+      <changed by="sap" on="1172242485323"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:application:esr:server:710"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_low"/>
+    <ifw:interfacePattern p2p="false">L</ifw:interfacePattern>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="f347938baf5b3bdc9ad6613e25afbc03"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="Check">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Query">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Create">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Revert">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Read">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Delete">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="IntegrationProcessCheckRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">IntegrationProcessCheckRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>1686fb10807711dbbc790011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="IntegrationProcessIdentifierCollection" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=IntegrationProcessIdentifierCollection~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="IntegrationProcessReadResponse">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">IntegrationProcessReadResponse</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>14b60ba0807711dbb2480011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="IntegrationProcessReadOut" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=IntegrationProcessReadOut~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="IntegrationProcessRevertRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">IntegrationProcessRevertRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>14dc3140807711dbb1190011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="IntegrationProcessIdentifierCollection" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=IntegrationProcessIdentifierCollection~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="IntegrationProcessCreateRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">IntegrationProcessCreateRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>150256e0807711db90630011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="IntegrationProcessCreateChangeIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=IntegrationProcessCreateChangeIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="IntegrationProcessQueryRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">IntegrationProcessQueryRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>15477630807711db9bcd0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="IntegrationProcessQueryIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=IntegrationProcessQueryIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="LogMessageCollection">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">LogMessageCollection</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>fda002e0807611dbb29a0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="LogMessageCollection" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=LogMessageCollection~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="IntegrationProcessDeleteRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">IntegrationProcessDeleteRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>145463a0807711db86100011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="IntegrationProcessDeleteOpenForEditIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=IntegrationProcessDeleteOpenForEditIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ConfigurationObjectModifyResponse">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ConfigurationObjectModifyResponse</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>ffc92470807611dbbd600011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ConfigurationObjectModifyOut" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ConfigurationObjectModifyOut~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="IntegrationProcessReadRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">IntegrationProcessReadRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>15346360807711db8acb0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="IntegrationProcessReadIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=IntegrationProcessReadIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="IntegrationProcessQueryResponse">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">IntegrationProcessQueryResponse</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>1517dab0807711dbc2f40011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="IntegrationProcessQueryOut" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=IntegrationProcessQueryOut~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>c90d3621a40a11e18645d49f0a4290b1</ifw:guid>
+        <ifw:name>SAP BASIS 7.40</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:folder>
+        <ifw:guid>cu####4#####k##</ifw:guid>
+      </ifw:folder>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_f347938baf5b3bdc9ad6613e25afbc03_ifmmessif</name>
+        <namespace>http://sap.com/xi/BASIS</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_Check"/>
+  <wsp:Policy wsu:Id="OP_Query"/>
+  <wsp:Policy wsu:Id="OP_Create"/>
+  <wsp:Policy wsu:Id="OP_Revert"/>
+  <wsp:Policy wsu:Id="OP_Read"/>
+  <wsp:Policy wsu:Id="OP_Delete"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://sap.com/xi/BASIS/Global" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sap.com/xi/BASIS/Global">
+      <xsd:simpleType name="LONG_Description.Content">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="255"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="GLOBAL_DateTime">
+        <xsd:restriction base="xsd:dateTime">
+          <xsd:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(.[0-9]{1,7})?Z"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Time">
+        <xsd:restriction base="xsd:time">
+          <xsd:pattern value="[0-9]{2}:[0-9]{2}:[0-9]{2}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="IntegerValue">
+        <xsd:restriction base="xsd:int"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="LanguageCode">
+        <xsd:restriction base="xsd:language">
+          <xsd:length value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Date">
+        <xsd:restriction base="xsd:date">
+          <xsd:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemSeverityCode">
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="1"/>
+          <xsd:enumeration value="1"/>
+          <xsd:enumeration value="2"/>
+          <xsd:enumeration value="3"/>
+          <xsd:enumeration value="4"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_Text">
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_LONG_Name">
+        <xsd:restriction base="xsd:string">
+          <xsd:minLength value="0"/>
+          <xsd:maxLength value="80"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="LONG_Description">
+        <xsd:simpleContent>
+          <xsd:extension base="LONG_Description.Content">
+            <xsd:attribute name="languageCode" type="LanguageCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:complexType name="Text">
+        <xsd:simpleContent>
+          <xsd:extension base="xsd:string">
+            <xsd:attribute name="languageCode" type="LanguageCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://sap.com/xi/BASIS" xmlns:p3="http://sap.com/xi/BASIS/Global" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sap.com/xi/BASIS">
+      <xsd:import namespace="http://sap.com/xi/BASIS/Global"/>
+      <xsd:element name="IntegrationProcessRevertRequest" type="IntegrationProcessIdentifierCollection"/>
+      <xsd:element name="ConfigurationObjectModifyResponse" type="ConfigurationObjectModifyOut"/>
+      <xsd:element name="LogMessageCollection" type="LogMessageCollection"/>
+      <xsd:element name="IntegrationProcessCheckRequest" type="IntegrationProcessIdentifierCollection"/>
+      <xsd:element name="IntegrationProcessReadRequest" type="IntegrationProcessReadIn"/>
+      <xsd:element name="IntegrationProcessCreateRequest" type="IntegrationProcessCreateChangeIn"/>
+      <xsd:element name="IntegrationProcessQueryResponse" type="IntegrationProcessQueryOut"/>
+      <xsd:element name="IntegrationProcessQueryRequest" type="IntegrationProcessQueryIn"/>
+      <xsd:element name="IntegrationProcessReadResponse" type="IntegrationProcessReadOut"/>
+      <xsd:element name="IntegrationProcessDeleteRequest" type="IntegrationProcessDeleteOpenForEditIn"/>
+      <xsd:simpleType name="CommunicationChannelChannelID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ReadContextCode">
+        <xsd:restriction base="xsd:token">
+          <xsd:enumeration value="User"/>
+          <xsd:enumeration value="Active"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="DesignObjectName">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="120"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="GenericPropertyID">
+        <xsd:restriction base="xsd:token"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogMessageClassificationCode">
+        <xsd:restriction base="xsd:token"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_Text">
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="ValueMappingID">
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="36"/>
+          <xsd:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="SoftwareComponentVersionID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Universally Unique Identifier</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="36"/>
+          <xsd:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CommunicationComponentComponentID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ConfigurationScenarioID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ProcessComponentID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="DesignObjectNamespace">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="255"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CommunicationPartyID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CommunicationComponentAdditionalIdentifier.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="UserID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">User Account ID Content</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="12"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ChangeListChangeListID">
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="36"/>
+          <xsd:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ReceiverRuleID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="IntegrationProcessQueryIn">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="IntegrationProcessID" type="CommunicationComponentID"/>
+          <xsd:element minOccurs="0" name="Description" type="p3:LONG_Description"/>
+          <xsd:element minOccurs="0" name="AdministrativeData" type="ObjectAdministrativeData"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ConfigurationObjectModifyOut">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListID"/>
+          <xsd:element minOccurs="0" name="LogMessageCollection" type="LogMessageCollection"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageReceiverRule">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ReceiverRuleID" type="ReceiverRuleID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DesignObjectID">
+        <xsd:sequence>
+          <xsd:element name="Name" type="DesignObjectName"/>
+          <xsd:element name="Namespace" type="DesignObjectNamespace"/>
+          <xsd:element minOccurs="0" name="SoftwareComponentVersionID" type="SoftwareComponentVersionID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IntegrationProcessCreateChangeIn">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListChangeListID"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IntegrationProcess" type="RestrictedIntegrationProcess"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ChannelProperty">
+        <xsd:sequence>
+          <xsd:element name="Name" type="GenericPropertyID"/>
+          <xsd:element minOccurs="0" name="Value" type="CommunicationChannelID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ChangeListID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListChangeListID"/>
+          <xsd:element minOccurs="0" name="Name" type="p3:LANGUAGEINDEPENDENT_LONG_Name"/>
+          <xsd:element minOccurs="0" name="Description" type="p3:LONG_Description"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageCollection">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessage" type="LogMessage"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageChangeList" type="LogMessageChangeList"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageParty" type="LogMessageCommunicationParty"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageProcessComponent" type="LogMessageProcessComponent"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageBusinessSystem" type="LogMessageCommunicationComponent"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageBusinessComponent" type="LogMessageCommunicationComponent"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageIntegrationProcess" type="LogMessageCommunicationComponent"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageCommunicationChannel" type="LogMessageCommunicationChannel"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageSenderAgreement" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageReceiverAgreement" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageDirectConnection" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageIntegratedConfiguration" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageReceiverDetermination" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageReceiverRule" type="LogMessageReceiverRule"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageInterfaceDetermination" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageValueMapping" type="LogMessageValueMapping"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageConfigurationScenario" type="LogMessageConfigurationScenario"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CommunicationComponentAdditionalIdentifier">
+        <xsd:simpleContent>
+          <xsd:extension base="CommunicationComponentAdditionalIdentifier.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="20"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:complexType name="CommunicationComponentID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PartyID" type="CommunicationPartyID"/>
+          <xsd:element name="ComponentID" type="CommunicationComponentComponentID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ConfigurableParameters">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Integer" type="IntegerProperty"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="String" type="RestrictedGenericProperty"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Channel" type="ChannelProperty"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Date" type="DateProperty"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Time" type="TimeProperty"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Agent" type="AgentProperty"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DateProperty">
+        <xsd:sequence>
+          <xsd:element name="Name" type="GenericPropertyID"/>
+          <xsd:element minOccurs="0" name="Value" type="p3:Date"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessage">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IntegrationProcess">
+        <xsd:sequence>
+          <xsd:element name="MasterLanguage" type="p3:LanguageCode"/>
+          <xsd:element minOccurs="0" name="AdministrativeData" type="ObjectAdministrativeData"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Description" type="p3:LONG_Description"/>
+          <xsd:element name="IntegrationProcessID" type="CommunicationComponentID"/>
+          <xsd:element name="RepositoryIntegrationProcess" type="DesignObjectID"/>
+          <xsd:element minOccurs="0" name="ProcessParameters" type="ConfigurableParameters"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="AdditionalIdentifier" type="CommunicationComponentAdditionalIdentifier"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="InboundInterface" type="DesignObjectID"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="OutboundInterface" type="DesignObjectID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageCommunicationParty">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PartyID" type="CommunicationPartyID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageConfigurationScenario">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ConfigurationScenarioID" type="ConfigurationScenarioID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageCommunicationChannel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CommunicationChannelID" type="CommunicationChannelID"/>
+          <xsd:element name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IntegrationProcessReadOut">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IntegrationProcess" type="IntegrationProcess"/>
+          <xsd:element minOccurs="0" name="LogMessageCollection" type="LogMessageCollection"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CommunicationChannelID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PartyID" type="CommunicationPartyID"/>
+          <xsd:element name="ComponentID" type="CommunicationComponentComponentID"/>
+          <xsd:element name="ChannelID" type="CommunicationChannelChannelID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RestrictedIntegrationProcess">
+        <xsd:sequence>
+          <xsd:element name="MasterLanguage" type="p3:LanguageCode"/>
+          <xsd:element minOccurs="0" name="AdministrativeData" type="RestrictedObjectAdministrativeData"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Description" type="p3:LONG_Description"/>
+          <xsd:element name="IntegrationProcessID" type="CommunicationComponentID"/>
+          <xsd:element name="RepositoryIntegrationProcess" type="DesignObjectID"/>
+          <xsd:element minOccurs="0" name="ProcessParameters" type="ConfigurableParameters"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="AdditionalIdentifier" type="CommunicationComponentAdditionalIdentifier"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageCommunicationComponent">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CommunicationComponentID" type="CommunicationComponentID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageChangeList">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IntegrationProcessIdentifierCollection">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IntegrationProcessID" type="CommunicationComponentID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IntegrationProcessDeleteOpenForEditIn">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListChangeListID"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IntegrationProcessID" type="CommunicationComponentID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ObjectAdministrativeData">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">ObjectAdministrativeData</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ResponsibleUserAccountID" type="UserID"/>
+          <xsd:element minOccurs="0" name="LastChangeUserAccountID" type="UserID"/>
+          <xsd:element minOccurs="0" name="LastChangeDateTime" type="p3:GLOBAL_DateTime"/>
+          <xsd:element minOccurs="0" name="FolderPathID" type="p3:LANGUAGEINDEPENDENT_Text"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IntegerProperty">
+        <xsd:sequence>
+          <xsd:element name="Name" type="GenericPropertyID"/>
+          <xsd:element minOccurs="0" name="Value" type="p3:IntegerValue"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IntegrationProcessQueryOut">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IntegrationProcessID" type="CommunicationComponentID"/>
+          <xsd:element minOccurs="0" name="LogMessageCollection" type="LogMessageCollection"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RestrictedObjectAdministrativeData">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">ObjectAdministrativeData</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ResponsibleUserAccountID" type="UserID"/>
+          <xsd:element minOccurs="0" name="FolderPathID" type="LANGUAGEINDEPENDENT_Text"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="SeverityCode" type="p3:LogItemSeverityCode"/>
+          <xsd:element minOccurs="0" name="ClassificationCode" type="LogMessageClassificationCode"/>
+          <xsd:element minOccurs="0" name="Message" type="p3:Text"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RestrictedGenericProperty">
+        <xsd:sequence>
+          <xsd:element name="Name" type="GenericPropertyID"/>
+          <xsd:element minOccurs="0" name="Value" type="p3:LANGUAGEINDEPENDENT_Text"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageValueMapping">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ValueMappingID" type="ValueMappingID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageMessageHeader">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="MessageHeader" type="MessageHeaderID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AgentProperty">
+        <xsd:sequence>
+          <xsd:element name="Name" type="GenericPropertyID"/>
+          <xsd:element minOccurs="0" name="Value" type="UserID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="MessageHeaderID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="SenderPartyID" type="CommunicationPartyID"/>
+          <xsd:element name="SenderComponentID" type="CommunicationComponentComponentID"/>
+          <xsd:element name="InterfaceName" type="DesignObjectName"/>
+          <xsd:element name="InterfaceNamespace" type="DesignObjectNamespace"/>
+          <xsd:element minOccurs="0" name="ReceiverPartyID" type="CommunicationPartyID"/>
+          <xsd:element minOccurs="0" name="ReceiverComponentID" type="CommunicationComponentComponentID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TimeProperty">
+        <xsd:sequence>
+          <xsd:element name="Name" type="GenericPropertyID"/>
+          <xsd:element minOccurs="0" name="Value" type="p3:Time"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageProcessComponent">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ProcessComponentID" type="ProcessComponentID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IntegrationProcessReadIn">
+        <xsd:sequence>
+          <xsd:element default="User" minOccurs="0" name="ReadContext" type="ReadContextCode"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="IntegrationProcessID" type="CommunicationComponentID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IntegrationProcessCheckRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:IntegrationProcessCheckRequest" name="IntegrationProcessCheckRequest"/>
+  </wsdl:message>
+  <wsdl:message name="IntegrationProcessQueryRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:IntegrationProcessQueryRequest" name="IntegrationProcessQueryRequest"/>
+  </wsdl:message>
+  <wsdl:message name="IntegrationProcessQueryResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:IntegrationProcessQueryResponse" name="IntegrationProcessQueryResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IntegrationProcessCreateRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:IntegrationProcessCreateRequest" name="IntegrationProcessCreateRequest"/>
+  </wsdl:message>
+  <wsdl:message name="IntegrationProcessRevertRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:IntegrationProcessRevertRequest" name="IntegrationProcessRevertRequest"/>
+  </wsdl:message>
+  <wsdl:message name="LogMessageCollection">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:LogMessageCollection" name="LogMessageCollection"/>
+  </wsdl:message>
+  <wsdl:message name="IntegrationProcessReadRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:IntegrationProcessReadRequest" name="IntegrationProcessReadRequest"/>
+  </wsdl:message>
+  <wsdl:message name="IntegrationProcessReadResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:IntegrationProcessReadResponse" name="IntegrationProcessReadResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IntegrationProcessDeleteRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:IntegrationProcessDeleteRequest" name="IntegrationProcessDeleteRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ConfigurationObjectModifyResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ConfigurationObjectModifyResponse" name="ConfigurationObjectModifyResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IntegrationProcessIn">
+    <wsdl:documentation/>
+    <wsdl:operation name="Check">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Check"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:IntegrationProcessCheckRequest"/>
+      <wsdl:output message="p1:LogMessageCollection"/>
+    </wsdl:operation>
+    <wsdl:operation name="Query">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Query"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:IntegrationProcessQueryRequest"/>
+      <wsdl:output message="p1:IntegrationProcessQueryResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Create">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Create"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:IntegrationProcessCreateRequest"/>
+      <wsdl:output message="p1:ConfigurationObjectModifyResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Revert">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Revert"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:IntegrationProcessRevertRequest"/>
+      <wsdl:output message="p1:LogMessageCollection"/>
+    </wsdl:operation>
+    <wsdl:operation name="Read">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Read"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:IntegrationProcessReadRequest"/>
+      <wsdl:output message="p1:IntegrationProcessReadResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Delete"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:IntegrationProcessDeleteRequest"/>
+      <wsdl:output message="p1:ConfigurationObjectModifyResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IntegrationProcessInBinding" type="p1:IntegrationProcessIn">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Check">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Query">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Revert">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Read">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+<wsdl:service name="IntegrationProcessIn_Service">
+<wsdl:port xmlns:bprf="http://sap.com/xi/BASIS" binding="bprf:IntegrationProcessInBinding" name="IntegrationProcessIn_Port">
+<soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="/"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>
