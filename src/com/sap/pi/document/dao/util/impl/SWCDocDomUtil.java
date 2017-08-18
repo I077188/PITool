@@ -10,11 +10,11 @@ import com.sap.pi.document.util.DocDomUtil;
 import com.sap.pi.document.util.dao.Item;
 import com.sap.pi.document.util.impl.DocDomGroupUtilImpl;
 import com.sap.pi.document.util.impl.DocDomUtilImpl;
-import com.sap.pi.document.util.impl.GetPICompInfoImpl;
+import com.sap.pi.document.util.impl.EasyQueryOperationImpl;
 
 public class SWCDocDomUtil {
 
-	GetPICompInfoImpl getInfo = new GetPICompInfoImpl();
+	EasyQueryOperationImpl getInfo = new EasyQueryOperationImpl();
 	DocDomUtil domUtil = new DocDomUtilImpl();
 	DocDomGroupUtil domGroupUtil = new DocDomGroupUtilImpl();
 
