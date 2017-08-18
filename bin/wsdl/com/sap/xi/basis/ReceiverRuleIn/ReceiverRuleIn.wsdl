@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://sap.com/xi/BASIS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="ReceiverRuleIn" targetNamespace="http://sap.com/xi/BASIS">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>c2010c94c34511dbcce10017a44cb001</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="sap"/>
+      <changed by="sap" on="1172242631257"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:application:esr:server:710"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_low"/>
+    <ifw:interfacePattern p2p="false">L</ifw:interfacePattern>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="cdda7da3a15e36249a9d7bccff636b6c"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="Check">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Change">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Query">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Create">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Revert">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Read">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="Delete">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+      <ifw:method name="OpenForEdit">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>true</ifw:isInbound>
+        <ifw:interfaceCategory>inbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState>N</objectState>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="ReceiverRuleChangeRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleChangeRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>d94bee90807611dbae1a0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleCreateChangeIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleCreateChangeIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleRevertRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleRevertRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>db454d90807611db9f880011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleIdentifierCollection" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleIdentifierCollection~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="LogMessageCollection">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">LogMessageCollection</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>fda002e0807611dbb29a0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="LogMessageCollection" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=LogMessageCollection~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleReadResponse">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleReadResponse</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>d92f3ed0807611dbb6d80011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleReadOut" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleReadOut~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ConfigurationObjectModifyResponse">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ConfigurationObjectModifyResponse</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>ffc92470807611dbbd600011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ConfigurationObjectModifyOut" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ConfigurationObjectModifyOut~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleReadRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleReadRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>dcd11db0807611dba93a0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleReadIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleReadIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleDeleteRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleDeleteRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>dc41fd10807611db9ec80011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleDeleteOpenForEditIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleDeleteOpenForEditIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleCheckRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleCheckRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>d8ac2c20807611dbbd3e0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleIdentifierCollection" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleIdentifierCollection~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleQueryRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleQueryRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>da4d5900807611dbae120011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleQueryIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleQueryIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleCreateRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleCreateRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>d9091930807611dbb0eb0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleCreateChangeIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleCreateChangeIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleOpenForEditResponse">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleOpenForEditResponse</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>d9dfa310807611db80cf0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleOpenForEditOut" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleOpenForEditOut~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleOpenForEditRequest">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleOpenForEditRequest</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>db6b7330807611db8c200011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleDeleteOpenForEditIn" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleDeleteOpenForEditIn~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+      <ifw:message name="ReceiverRuleQueryResponse">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ReceiverRuleQueryResponse</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://sap.com/xi/BASIS</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://sap.com/xi/BASIS</ifw:technicalNamespace>
+        <ifw:VersionID>d7e18920807611db995d0011857d65de</ifw:VersionID>
+        <ifw:xmlNamespace>http://sap.com/xi/BASIS</ifw:xmlNamespace>
+        <ifw:dataType name="ReceiverRuleQueryOut" namespace="http://sap.com/xi/BASIS" swcvId="c90d3621a40a11e18645d49f0a4290b1" uri="name=ReceiverRuleQueryOut~namespace=http://sap.com/xi/BASIS~swcvId=c90d3621a40a11e18645d49f0a4290b1"/>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>c90d3621a40a11e18645d49f0a4290b1</ifw:guid>
+        <ifw:name>SAP BASIS 7.40</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:folder>
+        <ifw:guid>9j####4#####k##</ifw:guid>
+      </ifw:folder>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_cdda7da3a15e36249a9d7bccff636b6c_ifmmessif</name>
+        <namespace>http://sap.com/xi/BASIS</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_Check"/>
+  <wsp:Policy wsu:Id="OP_Change"/>
+  <wsp:Policy wsu:Id="OP_Query"/>
+  <wsp:Policy wsu:Id="OP_Create"/>
+  <wsp:Policy wsu:Id="OP_Revert"/>
+  <wsp:Policy wsu:Id="OP_Read"/>
+  <wsp:Policy wsu:Id="OP_Delete"/>
+  <wsp:Policy wsu:Id="OP_OpenForEdit"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://sap.com/xi/BASIS/Global" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sap.com/xi/BASIS/Global">
+      <xsd:simpleType name="LONG_Description.Content">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="255"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="GLOBAL_DateTime">
+        <xsd:restriction base="xsd:dateTime">
+          <xsd:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(.[0-9]{1,7})?Z"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LanguageCode">
+        <xsd:restriction base="xsd:language">
+          <xsd:length value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemSeverityCode">
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="1"/>
+          <xsd:enumeration value="1"/>
+          <xsd:enumeration value="2"/>
+          <xsd:enumeration value="3"/>
+          <xsd:enumeration value="4"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CompareOperatorCode">
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="2"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_Text">
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_LONG_Name">
+        <xsd:restriction base="xsd:string">
+          <xsd:minLength value="0"/>
+          <xsd:maxLength value="80"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="LONG_Description">
+        <xsd:simpleContent>
+          <xsd:extension base="LONG_Description.Content">
+            <xsd:attribute name="languageCode" type="LanguageCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:complexType name="Text">
+        <xsd:simpleContent>
+          <xsd:extension base="xsd:string">
+            <xsd:attribute name="languageCode" type="LanguageCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://sap.com/xi/BASIS" xmlns:p3="http://sap.com/xi/BASIS/Global" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sap.com/xi/BASIS">
+      <xsd:import namespace="http://sap.com/xi/BASIS/Global"/>
+      <xsd:element name="ReceiverRuleOpenForEditResponse" type="ReceiverRuleOpenForEditOut"/>
+      <xsd:element name="ConfigurationObjectModifyResponse" type="ConfigurationObjectModifyOut"/>
+      <xsd:element name="LogMessageCollection" type="LogMessageCollection"/>
+      <xsd:element name="ReceiverRuleQueryResponse" type="ReceiverRuleQueryOut"/>
+      <xsd:element name="ReceiverRuleReadResponse" type="ReceiverRuleReadOut"/>
+      <xsd:element name="ReceiverRuleOpenForEditRequest" type="ReceiverRuleDeleteOpenForEditIn"/>
+      <xsd:element name="ReceiverRuleChangeRequest" type="ReceiverRuleCreateChangeIn"/>
+      <xsd:element name="ReceiverRuleReadRequest" type="ReceiverRuleReadIn"/>
+      <xsd:element name="ReceiverRuleRevertRequest" type="ReceiverRuleIdentifierCollection"/>
+      <xsd:element name="ReceiverRuleCheckRequest" type="ReceiverRuleIdentifierCollection"/>
+      <xsd:element name="ReceiverRuleDeleteRequest" type="ReceiverRuleDeleteOpenForEditIn"/>
+      <xsd:element name="ReceiverRuleCreateRequest" type="ReceiverRuleCreateChangeIn"/>
+      <xsd:element name="ReceiverRuleQueryRequest" type="ReceiverRuleQueryIn"/>
+      <xsd:simpleType name="CommunicationChannelChannelID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ReadContextCode">
+        <xsd:restriction base="xsd:token">
+          <xsd:enumeration value="User"/>
+          <xsd:enumeration value="Active"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="DesignObjectName">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="120"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogMessageClassificationCode">
+        <xsd:restriction base="xsd:token"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_Text">
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="ValueMappingID">
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="36"/>
+          <xsd:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CommunicationComponentComponentID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ConfigurationScenarioID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ProcessComponentID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="DesignObjectNamespace">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="255"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="CommunicationPartyID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="UserID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">User Account ID Content</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="12"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ExtractorTypeCode">
+        <xsd:restriction base="xsd:token">
+          <xsd:enumeration value="XPath"/>
+          <xsd:enumeration value="Context Object"/>
+          <xsd:enumeration value="Technical Context Object"/>
+          <xsd:enumeration value="Constant"/>
+          <xsd:enumeration value="Message Header Field"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ChangeListChangeListID">
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="36"/>
+          <xsd:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ReceiverRuleID">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="60"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="ConfigurationObjectModifyOut">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListID"/>
+          <xsd:element minOccurs="0" name="LogMessageCollection" type="LogMessageCollection"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageReceiverRule">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ReceiverRuleID" type="ReceiverRuleID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRuleIdentifierCollection">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReceiverRuleIdentifier" type="ReceiverRuleID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ChangeListID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListChangeListID"/>
+          <xsd:element minOccurs="0" name="Name" type="p3:LANGUAGEINDEPENDENT_LONG_Name"/>
+          <xsd:element minOccurs="0" name="Description" type="p3:LONG_Description"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageCollection">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessage" type="LogMessage"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageChangeList" type="LogMessageChangeList"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageParty" type="LogMessageCommunicationParty"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageProcessComponent" type="LogMessageProcessComponent"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageBusinessSystem" type="LogMessageCommunicationComponent"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageBusinessComponent" type="LogMessageCommunicationComponent"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageIntegrationProcess" type="LogMessageCommunicationComponent"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageCommunicationChannel" type="LogMessageCommunicationChannel"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageSenderAgreement" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageReceiverAgreement" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageDirectConnection" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageIntegratedConfiguration" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageReceiverDetermination" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageReceiverRule" type="LogMessageReceiverRule"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageInterfaceDetermination" type="LogMessageMessageHeader"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageValueMapping" type="LogMessageValueMapping"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="LogMessageConfigurationScenario" type="LogMessageConfigurationScenario"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CommunicationPartnerExtractor">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CommunicationParty" type="Extractor"/>
+          <xsd:element minOccurs="0" name="CommunicationPartySchema" type="Extractor"/>
+          <xsd:element minOccurs="0" name="CommunicationPartyAgency" type="Extractor"/>
+          <xsd:element minOccurs="0" name="CommunicationComponent" type="Extractor"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CommunicationComponentID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PartyID" type="CommunicationPartyID"/>
+          <xsd:element name="ComponentID" type="CommunicationComponentComponentID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AtomicCondition">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Operator" type="p3:CompareOperatorCode"/>
+          <xsd:element minOccurs="0" name="LeftExtractor" type="Extractor"/>
+          <xsd:element minOccurs="0" name="RightExtractor" type="Extractor"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessage">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRuleQueryOut">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReceiverRuleID" type="ReceiverRuleID"/>
+          <xsd:element minOccurs="0" name="LogMessageCollection" type="LogMessageCollection"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageCommunicationParty">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PartyID" type="CommunicationPartyID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageConfigurationScenario">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ConfigurationScenarioID" type="ConfigurationScenarioID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageCommunicationChannel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CommunicationChannelID" type="CommunicationChannelID"/>
+          <xsd:element name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AtomicConditionBlock">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="AtomicCondition" type="AtomicCondition"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CommunicationChannelID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PartyID" type="CommunicationPartyID"/>
+          <xsd:element name="ComponentID" type="CommunicationComponentComponentID"/>
+          <xsd:element name="ChannelID" type="CommunicationChannelChannelID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRule">
+        <xsd:sequence>
+          <xsd:element name="MasterLanguage" type="p3:LanguageCode"/>
+          <xsd:element minOccurs="0" name="AdministrativeData" type="ObjectAdministrativeData"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Description" type="p3:LONG_Description"/>
+          <xsd:element name="ReceiverRuleID" type="ReceiverRuleID"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Rule" type="ReceiverRulePart"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RestrictedReceiverRule">
+        <xsd:sequence>
+          <xsd:element name="MasterLanguage" type="p3:LanguageCode"/>
+          <xsd:element minOccurs="0" name="AdministrativeData" type="RestrictedObjectAdministrativeData"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Description" type="p3:LONG_Description"/>
+          <xsd:element name="ReceiverRuleID" type="ReceiverRuleID"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Rule" type="ReceiverRulePart"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageCommunicationComponent">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="CommunicationComponentID" type="CommunicationComponentID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Extractor">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="TypeID" type="ExtractorTypeCode"/>
+          <xsd:element minOccurs="0" name="Value" type="p3:LANGUAGEINDEPENDENT_Text"/>
+          <xsd:element minOccurs="0" name="Datatype" type="p3:LANGUAGEINDEPENDENT_Text"/>
+          <xsd:element minOccurs="0" name="ContextObjectName" type="DesignObjectName"/>
+          <xsd:element minOccurs="0" name="ContextObjectNamespace" type="DesignObjectNamespace"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageChangeList">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ObjectAdministrativeData">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">ObjectAdministrativeData</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ResponsibleUserAccountID" type="UserID"/>
+          <xsd:element minOccurs="0" name="LastChangeUserAccountID" type="UserID"/>
+          <xsd:element minOccurs="0" name="LastChangeDateTime" type="p3:GLOBAL_DateTime"/>
+          <xsd:element minOccurs="0" name="FolderPathID" type="p3:LANGUAGEINDEPENDENT_Text"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Condition">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="AtomicConditionBlock" type="AtomicConditionBlock"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RestrictedObjectAdministrativeData">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">ObjectAdministrativeData</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ResponsibleUserAccountID" type="UserID"/>
+          <xsd:element minOccurs="0" name="FolderPathID" type="LANGUAGEINDEPENDENT_Text"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="SeverityCode" type="p3:LogItemSeverityCode"/>
+          <xsd:element minOccurs="0" name="ClassificationCode" type="LogMessageClassificationCode"/>
+          <xsd:element minOccurs="0" name="Message" type="p3:Text"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRuleReadOut">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReceiverRule" type="ReceiverRule"/>
+          <xsd:element minOccurs="0" name="LogMessageCollection" type="LogMessageCollection"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRuleDeleteOpenForEditIn">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListChangeListID"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReceiverRuleID" type="ReceiverRuleID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRuleReadIn">
+        <xsd:sequence>
+          <xsd:element default="User" minOccurs="0" name="ReadContext" type="ReadContextCode"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReceiverRuleID" type="ReceiverRuleID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageValueMapping">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ValueMappingID" type="ValueMappingID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageMessageHeader">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="MessageHeader" type="MessageHeaderID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRuleQueryIn">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ReceiverRuleID" type="ReceiverRuleID"/>
+          <xsd:element minOccurs="0" name="Description" type="p3:LONG_Description"/>
+          <xsd:element minOccurs="0" name="AdministrativeData" type="ObjectAdministrativeData"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRulePart">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Condition" type="Condition"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Receiver" type="CommunicationPartnerExtractor"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRuleOpenForEditOut">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListID"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReceiverRule" type="ReceiverRule"/>
+          <xsd:element minOccurs="0" name="LogMessageCollection" type="LogMessageCollection"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="MessageHeaderID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="SenderPartyID" type="CommunicationPartyID"/>
+          <xsd:element name="SenderComponentID" type="CommunicationComponentComponentID"/>
+          <xsd:element name="InterfaceName" type="DesignObjectName"/>
+          <xsd:element name="InterfaceNamespace" type="DesignObjectNamespace"/>
+          <xsd:element minOccurs="0" name="ReceiverPartyID" type="CommunicationPartyID"/>
+          <xsd:element minOccurs="0" name="ReceiverComponentID" type="CommunicationComponentComponentID"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReceiverRuleCreateChangeIn">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ChangeListID" type="ChangeListChangeListID"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ReceiverRule" type="RestrictedReceiverRule"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogMessageProcessComponent">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ProcessComponentID" type="ProcessComponentID"/>
+          <xsd:element minOccurs="0" name="LogMessageItem" type="LogMessageItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ReceiverRuleCheckRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleCheckRequest" name="ReceiverRuleCheckRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleChangeRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleChangeRequest" name="ReceiverRuleChangeRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleQueryRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleQueryRequest" name="ReceiverRuleQueryRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleQueryResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleQueryResponse" name="ReceiverRuleQueryResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleCreateRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleCreateRequest" name="ReceiverRuleCreateRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleRevertRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleRevertRequest" name="ReceiverRuleRevertRequest"/>
+  </wsdl:message>
+  <wsdl:message name="LogMessageCollection">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:LogMessageCollection" name="LogMessageCollection"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleReadRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleReadRequest" name="ReceiverRuleReadRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleReadResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleReadResponse" name="ReceiverRuleReadResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleDeleteRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleDeleteRequest" name="ReceiverRuleDeleteRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ConfigurationObjectModifyResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ConfigurationObjectModifyResponse" name="ConfigurationObjectModifyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleOpenForEditRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleOpenForEditRequest" name="ReceiverRuleOpenForEditRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ReceiverRuleOpenForEditResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:ReceiverRuleOpenForEditResponse" name="ReceiverRuleOpenForEditResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ReceiverRuleIn">
+    <wsdl:documentation/>
+    <wsdl:operation name="Check">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Check"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:ReceiverRuleCheckRequest"/>
+      <wsdl:output message="p1:LogMessageCollection"/>
+    </wsdl:operation>
+    <wsdl:operation name="Change">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Change"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:ReceiverRuleChangeRequest"/>
+      <wsdl:output message="p1:ConfigurationObjectModifyResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Query">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Query"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:ReceiverRuleQueryRequest"/>
+      <wsdl:output message="p1:ReceiverRuleQueryResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Create">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Create"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:ReceiverRuleCreateRequest"/>
+      <wsdl:output message="p1:ConfigurationObjectModifyResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Revert">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Revert"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:ReceiverRuleRevertRequest"/>
+      <wsdl:output message="p1:LogMessageCollection"/>
+    </wsdl:operation>
+    <wsdl:operation name="Read">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Read"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:ReceiverRuleReadRequest"/>
+      <wsdl:output message="p1:ReceiverRuleReadResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_Delete"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:ReceiverRuleDeleteRequest"/>
+      <wsdl:output message="p1:ConfigurationObjectModifyResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="OpenForEdit">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_OpenForEdit"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:ReceiverRuleOpenForEditRequest"/>
+      <wsdl:output message="p1:ReceiverRuleOpenForEditResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReceiverRuleInBinding" type="p1:ReceiverRuleIn">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Check">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Change">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Query">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Create">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Revert">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Read">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenForEdit">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+<wsdl:service name="ReceiverRuleIn_Service">
+<wsdl:port xmlns:bprf="http://sap.com/xi/BASIS" binding="bprf:ReceiverRuleInBinding" name="ReceiverRuleIn_Port">
+<soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="/"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

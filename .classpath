@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="sap.wsconsumer"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/libs_of_IDExport"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/IDExport.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/jaxb-impl.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/jaxrpc-api.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/mail.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/sap.com~tc~bl~base~webservices_lib~impl.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/sap.com~tc~bl~jkernel_boot~api.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/sap.com~tc~exception~impl.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/sap.com~tc~je~webservices_api~impl.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/sap.com~tc~je~webservices_lib~impl.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/sap.com~tc~logging~java~impl.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/sap.com~tc~sapxmltoolkit~sapxmltoolkit.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_2.0/libs/tc~je~sca~spi.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/poi-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/poi-examples-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/poi-excelant-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/poi-ooxml-3.16.jar" sourcepath="C:/Users/i077188/AppData/Local/Temp/decompiler/source/poi-ooxml-3.16-sources-1502767157852.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/poi-ooxml-schemas-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/ooxml-lib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/ooxml-lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/DEV/PI/ID Export/IDExport_2.0 and source code/IDExport_source/lib/poi-3.16/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient-4.5.3.jar" sourcepath="C:/Users/i077188/AppData/Local/Temp/decompiler/source/httpclient-4.5.3-sources-1502764609339.jar"/>
+	<classpathentry kind="lib" path="lib/httpcore-4.4.6.jar" sourcepath="C:/Users/i077188/AppData/Local/Temp/decompiler/source/httpcore-4.4.6-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/i077188/.p2/pool/plugins/org.apache.axis_1.4.0.v201411182030/lib/axis.jar"/>
+	<classpathentry kind="lib" path="C:/Users/i077188/.p2/pool/plugins/org.apache.commons.discovery_0.2.0.v201004190315/lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/i077188/.p2/pool/plugins/javax.xml.rpc_1.1.0.v201209140446/lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/i077188/.p2/pool/plugins/javax.xml.soap_1.2.0.v201005080501/lib/saaj.jar"/>
+	<classpathentry kind="lib" path="C:/Users/i077188/.p2/pool/plugins/javax.wsdl_1.6.2.v201012040545.jar"/>
+	<classpathentry kind="lib" path="C:/Users/i077188/.p2/pool/plugins/org.apache.commons.logging_1.1.1.v201101211721.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
