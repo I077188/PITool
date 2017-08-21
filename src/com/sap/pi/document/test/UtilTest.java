@@ -7,22 +7,30 @@ import java.util.List;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.xmlbeans.XmlException;
 
-import com.sap.pi.document.dao.util.impl.SWCDocDomUtil;
+import com.sap.pi.document.util.WebServiceOperation;
 import com.sap.pi.document.util.dao.CONSTAINTS;
 import com.sap.pi.document.util.dao.Item;
 import com.sap.pi.document.util.impl.DocDomGroupUtilImpl;
 import com.sap.pi.document.util.impl.DocDomUtilImpl;
 import com.sap.pi.document.util.impl.DocUtilImp;
+import com.sap.pi.document.util.impl.WebServiceOperationImpl;
+import com.sap.xi.basis.IntegratedConfiguration;
+import com.sap.xi.basis.MessageHeaderID;
 
 public class UtilTest {
 
 	public static void main(String[] args) {
 
-		SWCDocDomUtil swcDocDomUtil = new SWCDocDomUtil();
+		WebServiceOperation webServiceOperation = new WebServiceOperationImpl();
 
-		swcDocDomUtil.generateSWCDomFile(CONSTAINTS.DOM_SOFTWARECOMPONENT);
+		List<MessageHeaderID> messageHeaderIDs = webServiceOperation.getIntegratedConfigurationID();
 
-		swcDocDomUtil.generateSWCDomGroupFile(CONSTAINTS.DOMGROUP_SOFTWARECOMPONENT);
+		for (int i = 0; i < 2; i++) {
+			IntegratedConfiguration integratedConfiguration = webServiceOperation
+					.getIntegrationConfigurations(messageHeaderIDs.get(i));
+			webServiceOperation.getStagingInfomation(integratedConfiguration);
+		}
+
 	}
 
 	public static void domDomGroupTest() throws IOException, InvalidFormatException, XmlException {
