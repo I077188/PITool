@@ -1,4 +1,4 @@
-package com.sap.pi.document.util.impl;
+package com.sap.pi.document.test;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,6 +10,9 @@ import org.apache.xmlbeans.XmlException;
 import com.sap.pi.document.dao.util.impl.SWCDocDomUtil;
 import com.sap.pi.document.util.dao.CONSTAINTS;
 import com.sap.pi.document.util.dao.Item;
+import com.sap.pi.document.util.impl.DocDomGroupUtilImpl;
+import com.sap.pi.document.util.impl.DocDomUtilImpl;
+import com.sap.pi.document.util.impl.DocUtilImp;
 
 public class UtilTest {
 
